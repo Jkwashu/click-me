@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const SizedBox(height: 20), // Add space between counter and buttons
+            const SizedBox(height: 20), // Space between counter and buttons
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -91,9 +91,10 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.all(20),
             backgroundColor: Theme.of(context).colorScheme.primary,
           ),
-          child: Text(
-            '$increment',
-            style: const TextStyle(fontSize: 16),
+          child: const Icon(
+            Icons.add,
+            color: Colors.white,
+            size: 24,
           ),
         ),
       ],
